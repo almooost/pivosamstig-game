@@ -1,15 +1,8 @@
-import { useState } from "react";
-import './Main.css';
+import { Link } from "react-router-dom";
 
-function Main() {
-    const [taskState, setTaskState] = useState('solution0');
-
-    const handleSolution = () => {
-        setTaskState('solution1');
-        console.log(taskState);
-    }
+function Home(){
     return (
-        <div className="Main">
+        <div className="Home">
             <p>
                 Willkommen beim der ersten offiziellen “Pivo Samstig - Die Pivo-Jagd”
                 <br/>
@@ -34,10 +27,17 @@ function Main() {
             </p>
 
             <div>
-                <button className='btn' onClick={ event => handleSolution(event.target.value)}>Starten</button>
+            <Link
+                to={{
+                    pathname: "/task/1",
+                    state: {gameState: "running"}
+                }}
+                >
+                    <button className="btn">Start</button>
+            </Link>
             </div>
         </div>
-    );
+    )
 }
 
-export default Main;
+export {Home};

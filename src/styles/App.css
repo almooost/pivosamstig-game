@@ -1,0 +1,14 @@
+.App {
+  height: 100%;
+  width: 100%;
+}
+
+.Home {
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+  flex-direction: column;
+  flex-basis: auto;
+  flex-wrap: nowrap;
+  display: flex;
+}
