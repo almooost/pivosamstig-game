@@ -1,59 +1,61 @@
-import React, { createRef, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import useForm from "../hooks/useForm";
 
-const task = {
-    description: "Erstes Spiel",
-    solution: "papajoe",
-    solution_desc : "Papa Joe's Zürich [Möglichkeiten papa joe, papa joes, papa joes zürich] "
+const style = {
+    "max-width":"250px"
 };
-
 
 function TheBeginning2(){
 
-    const {isDisabled, setDisabled} = useState(true);
-
-    function checkSolution(event){
-        event.preventDefault();
-        console.log(event);
-        console.log(buttonRef);
-        event.target.value === task.solution
-        ? setDisabled(false)
-        : setDisabled(true);
+    const formLogin = () => {
+        console.log("Callback function when form is submitted!");
+        console.log("Form Values ", values);
     }
 
-    let buttonRef = createRef();
+    const {handleChange, handleSubmit,values, errors, styleNext} = useForm(formLogin);
 
     return (
         <div className="TaskWrapper">
             <div className="Task">
 
                 <h1>And so it begins!</h1>
+
+                <img src="https://c.tenor.com/oZw_V7BcGCsAAAAd/ras-al-ghul-batman-begins.gif" style={style}/>
             
                 <p className="description">
-                    Heute, fast genau vor 7 Jahren wurde der erste offizielle Pivo-Samstig Anlass durchgeführt. Der Foxtrail, welche uns durch Zürich führte und eigentlich ca. 1.5h dauern sollte, wurde durch einen "unverhofften" Bar-Besuch um ein paar Stunden verzögert.
-                </p>
-                <br/><br/>
-                <h2>In welcher Bar wurde die Gruppe aufgehalten?</h2>
-                <p className="description">
-                    Tipp: Die Bar ist ganz in der nähe ;-)
+                    Heute, vor 7 Jahren wurde der erste offizielle Pivo-Samstig Anlass durchgeführt. Der Foxtrail, welche uns durch Zürich führte und eigentlich ca. 1.5h dauern sollte, wurde durch einen "unverhofften" Bar-Besuch um ein paar Stunden verzögert.
+                <h3>In welcher Bar wurde die Gruppe aufgehalten?</h3>
+                
+                <i>Tipp: Die Bar befindet sich ganz in der Nähe ;-)</i>
                 </p>
             </div>
 
+            <form onSubmit={handleSubmit}>
             <div className="solution">
-            <p>Info: Gebt das Lösungswort in Kleinbuchstaben und ohne Abstände ein.
+            <p>Gebt das Lösungswort in Kleinbuchstaben und ohne Abstände ein.
                     <br />
                     Beispiel: Aus "Pivo Samstig" wird "pivosamstig"
                     <br /><br />
                     Lösungswort: 
                 </p>
-                <input className="form-control" type="text" name="solution" placeholder="Hier eingeben" />
+                {
+                    errors.solution && <h3>{errors.solution}</h3>
+                }
+                <input className="form-control" type="text" name="solution" placeholder="Hier eingeben" onChange={handleChange} />
             </div>
 
             <div>
-                <Link to="/ThePub2">
-                        <input type="submit" ref={buttonRef} className="btn" onSubmit={e => checkSolution(e)} value="Weiter" disabled={isDisabled} />
-                </Link>
+                <input type="submit" className="btn" value="Prüfen" />
+                
+                <div style={styleNext}>
+                    <Link to="/ThePub2">
+                        <button className="btn">Weiter</button>
+                    </Link>
+                </div>
+
             </div>
+            </form>
         </div>
     );
 }

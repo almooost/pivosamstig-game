@@ -8,34 +8,27 @@ function ReiseReise2(){
             <div className="Task">
 
                 <h1>Reise Reise, Seemannsreise</h1>
+
+                <img src="https://c.tenor.com/2iti_N6MuuoAAAAC/rammstein-till.gif" />
             
                 <p className="description">
-                    Begebt euch zum nächsten <a href="https://goo.gl/maps/3kfEe5D2U8JdLMWs8" target="_blank">Spot</a>, macht dort wieder ein Bild von der Aussenansicht und postet es im Chat.
+                    Reise Reise ja, aber aufs Schiff müsst ihr heute nicht, für das ist zu wenig Zeit und etwas zu kalt.<br />
+                    Begebt euch zum nächsten <a href="https://goo.gl/maps/UjJe119CKg6KL2Vv5" target="_blank">Spot</a>, macht dort wieder ein Bild von der Aussenansicht und postet es im Chat.
                     <br /><br />
                     Adresse:
-                    Freischützgasse 14<br />
+                    Grüngasse 7<br />
                     8004 Zürich
 
                     <br /><br />
 
-                    Wenn ihr  noch etwas gute Musik für den Weg braucht, here you go. <a href="https://open.spotify.com/track/53yBfGozCZOAqaM16PwMKP" target="_blank">Reise Reise</a><br /><br />
+                    Wenn ihr noch etwas gute Musik für den Weg braucht, here you go. <a href="https://open.spotify.com/track/53yBfGozCZOAqaM16PwMKP" target="_blank">Reise Reise</a><br /><br />
 
-                    "Aller guten Ding sind...3?2?4?" Egal...<br /><br />
-
-                    Fast geschafft, jetzt fehlt nicht mehr viel und ihr seit am Ziel angekommen. Doch, was gibt es hier an solch einem dunkeln Ort noch zu tun?
-                    <br /><br />
-                    Ach ja, da steht doch einer mit einem Hahn. Bittet ihn doch erst einmal um eine Runde und lasst es auch schmecken.
-                    <br /><br />
-                    Damit es euch während eures Aufenthaltes nicht langweilig wird, gibt es noch ein kleines Rätsel zu lösen.
-                    <br /><br />
-                    Versucht das Rätsel zu lösen und erstellt einen Screenshot von der Lösung und schickt ihn in den Chat.
-                    <br /><br />
-                    <a href="https://crosswordlabs.com/embed/pivo-samstig-games" target="_blank">Link</a> zum Rätsel: https://crosswordlabs.com/embed/pivo-samstig-games
+                    Sobald ihr am am Ziel angekommen seit drückt den Button, dann geht es weiter.
                 </p>
             </div>
             <div>
-                <Link to="/backtobase">
-                        <button className="btn">Back to Base</button>
+                <Link to="/Playboys">
+                        <button className="btn">Pyjamas</button>
                 </Link>
             </div>
         </div>

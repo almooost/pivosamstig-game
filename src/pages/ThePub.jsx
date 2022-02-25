@@ -8,10 +8,21 @@ function ThePub(){
             <div className="Task">
 
                 <h1>The Pub</h1>
+
+                <img src="https://c.tenor.com/evJYM-uYrVsAAAAM/shaun-of-the-dead-simon-pegg.gif" />
                 <p className="description">
-                Genau, die Gruppe wollte sich im Papa Joe's kurz aufwärmen und etwas "kleines" trinken. Aus den ausgeschriebenen 1.5h Foxtrail wurden schlussendlich etwa 4h.
-                <br /><br />
-                Ob ihrs glaubt oder nicht. Das Ziel haben wir erreicht!
+                Genau, die Gruppe wollte sich im <b>Papa Joe's</b> kurz aufwärmen und <i>gschwind</i> etwas trinken.
+                <br />
+                <br />
+                Aus den ausgeschriebenen 1.5h Foxtrail wurden schlussendlich etwa 4h.
+                <br />
+                <br />
+                Fun Fact - Hätte die Gruppe das Ziel ca. 15min später erreicht, wäre der Pivo Samstig das Monatsbild vom Foxtrail Februar geworden.
+                <br />
+                <br />
+                So, weiter gehts mit den Pivo Samstig Games..
+                <br />
+                <br />
                 </p>
 
                 <p className="description">
@@ -24,32 +35,14 @@ function ThePub(){
                     <br /><br />
                     <br /><br />
 
-                    Wenn ihr denkt, am richtigen Ort angekommen zu sein, <b>schickt ein Bild der Frontansicht in den Chat</b>.
+                    Wenn ihr denkt, am richtigen Ort angekommen zu sein, <b>macht mit eurem Smartphone ein Bild von der Frontansicht <i>vom Pub</i> und postet es im Chat</b>.
                     <br /><br />
-                    Sobald ihr am Ziel angekommen seit gilt: “Die Geschmacksnerven sind angespannt, wenn einem der Gaumenkitzel übermannt”.
-
-                    Bestellt eine Runde Getränke/Bier und lasst euch einen Glasuntersetzer vom Barkeeper unterschreiben. Macht ein Selfie/Bild von der Gruppe, dem unterschriebenen Glasuntersetzer und natürlich dem Barkeeper.
-                    <b>Cheers</b>!
-                    <br /><br />
-
-                    Während ihr euch entspannt gibt es noch Zusatzpunkte mit zwei Schätzfragen zu holen. Die Lösung könnt ihr einfach in den Chat posten.
-                    <br /><br />
-
-                    <b>Was war die durchschnittliche Bier-Konsumation pro Person über die letzte Pivo Samstig Reise verteilt?</b>
-                    <br /><br />
-
-                    <b>Auf welchem Platz landete das Team "Pro Mille - Häfi / Sam" auf der nationalen Rangliste der Schweizer Beerpong League?</b>
-                    <br /><br />
-
-
-                    Behaltet die Zeit im Auge, es gibt noch mehr zu tun.
-                    <br />
-                    Sobald ihr Ready seit, drückt auf Weiter.
+                    Sobald ihr das Bild gepostet habt, drückt auf Weiter.
                 </p>
             </div>
 
             <div>
-                <Link to="/OldTraditions">
+                <Link to="/DrinkingBuddies">
                     <button className="btn">Weiter</button>
                 </Link>
             </div>

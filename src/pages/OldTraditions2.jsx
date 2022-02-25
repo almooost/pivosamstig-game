@@ -1,5 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+const style = {
+    "max-width": "250px"
+};
 
 function OldTraditions2(){
 
@@ -7,35 +10,35 @@ function OldTraditions2(){
         <div className="TaskWrapper">
             <div className="Task">
 
-                <h1>Old Traditions</h1>
+                <h1>Old Tradition</h1>
+
+                <img src="https://c.tenor.com/qAy1e3z1P9UAAAAC/fun-excited.gif" style={style}/>
             
                 <p className="description">
                     Zu fast schon einer Tradition wurde beim Pivo Samstig das “Pivo to Go”. Nun wäre es natürlich doch nur all zu Schade, wenn ich euch dem trockenen Winter-Wetter komplett ohne Speiseröhrenbefeuchtungsmittel aussetzen würde.
                     <br /><br />
-                    Doch Obacht! Das Pub ist doch nicht einfach ein Bierladen. Ganz in eurer nähe, nämlich im Umkreis von 50m befindet sich ein ganz interessanter Shop, wo ihr ganz viel verschiedene Biere findet.
-                    <br />
-                    Aufgabe:
+                    <i>Obacht Hoi!</i> Das Pub ist doch nicht einfach ein Beer Shop. Ganz in eurer nähe befindet sich ein ganz interessanter Shop, wo ihr viele verschiedene Biere findet.
+                    
                     <h2>
-                        Geht zum nächsten Bierladen und besorgt dort min. 3 verschiedene Biere.
+                        Geht zum nächsten Beer Shop und besorgt dort min. 3 verschiedene Biere.
                     </h2>
+                    <i>Eine Info, wo es die <a href="https://goo.gl/maps/YTo1rfmKtNXToCc8A" target="_blank">besten Biere in eurer nähe</a> gibt, erhaltet ihr im Chat auf Anfrage.</i>
+                    <br /><br />
+                    <h3>
+                        Macht ein Bild mit allen gekauften Bieren und dem Laden und postet es im Chat.
+                        
+                        <br />
+                        Sobald ihr das Bild gepostet habt, erhaltet ihr weitere Informationen und den euer nächstes Ziel.
+                    </h3>
+                    <br /><br />
 
-                    <h4>
-                        Die Info, wos die besten Biere in eurer nähe gibt, erhaltet ihr im Chat auf Anfrage.
-                    </h4>
-                    <br /><br />
-                    Macht ein Bild mit allen gekauften Bieren vor dem Laden und schickt es in den Gruppenchat. Sobald ihr das Bild gepostet habt, erhaltet ihr den nächsten Standort via Chat.
-                    <br /><br />
-
-                    <b>WICHTIG</b>: Ob das Bier gleich sofort oder später konsumiert wird, ist egal. Das Glas oder die Dose mit der Etikette muss bis zum Schluss behalten werden.
-                    <br /><br />
+                    <b>WICHTIG</b>: Wann ihr das erworbene Bier trink, ist euch überlassen.
+                    <br />
+                    <i>Ich empfehle damit noch etwas zu warten</i>
+                    <b>Das Glas oder die Dose mit der Etikette müsst ihr beim Treffpunkt dem Spielleiter vorweisen.</b>
                 </p>
             </div>
 
-            <div>
-                <Link to="/reisereise2">
-                    <button className="btn">Weiter</button>
-                </Link>
-            </div>
         </div>
     );
 }
