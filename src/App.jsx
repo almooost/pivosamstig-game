@@ -11,9 +11,7 @@ function App() {
   console.log(team);
   return (
     <div className="App">
-      <Header />
       <Main />
-      <Footer />
     </div>
   );
 }

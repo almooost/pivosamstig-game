@@ -1,3 +1,8 @@
+a {
+  text-decoration: underline;
+  color: white;
+}
+
 .App {
   height: 100%;
   width: 100%;
@@ -11,4 +16,18 @@
   flex-basis: auto;
   flex-wrap: nowrap;
   display: flex;
+}
+
+.description {
+  font-size: large;
+}
+
+.question {
+  font-size: larger;
+  font-weight: 700;
+}
+
+.solution {
+  padding-top: 15px;
+  font-size: medium;
 }

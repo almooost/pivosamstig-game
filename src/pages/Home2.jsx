@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Home(){
+function Home2(){
     return (
         <div className="Home">
             <h1>Willkommen beim der ersten offiziellen Pivo Samstig Games</h1>
@@ -25,12 +25,14 @@ function Home(){
             </p>
 
             <div>
-            <Link to="/thebeginning">
-                <button className="btn">Start</button>
+            <Link
+                to="/thebeginning2"
+                >
+                    <button className="btn">Start</button>
             </Link>
             </div>
         </div>
     )
 }
 
-export {Home};
+export {Home2};
