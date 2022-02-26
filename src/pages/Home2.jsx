@@ -1,10 +1,19 @@
 import { Link } from "react-router-dom";
+import useForm from "../hooks/useForm";
 
 const style = {
     "font-size":"5px"
 };
 
 function Home2(){
+
+    const formLogin = () => {
+        console.log("Callback function when form is submitted!");
+        console.log("Form Values ", values);
+    }
+
+    const {handleChange, handleSubmit,values, errors, styleNext} = useForm(formLogin);
+
     return (
         <div className="Home">
             <h1>
@@ -49,9 +58,23 @@ function Home2(){
             </p>
 
             <div>
-            <Link to="/TheBeginning2">
-                <button className="btn">Start</button>
-            </Link>
+
+            <form onSubmit={handleSubmit}>
+            <div className="solution">
+                <p>
+                    Kennwort: 
+                </p>
+                <input className="form-control" type="text" name="solution" placeholder="Hier eingeben" onChange={handleChange} />
+            </div>
+
+            <div>
+                <input type="submit" className="btn" value="Prüfen" />
+                <Link to="/TheBeginning2">
+                    <button className="btn" style={styleNext}>Start</button>
+                </Link>
+            </div>
+            </form>
+
             </div>
         </div>
     )

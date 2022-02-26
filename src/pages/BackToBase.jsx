@@ -22,9 +22,11 @@ function BackToBase(){
                 <br /><br />
                 Da ihr jetzt wissen solltet, wo es anschliessend hin geht, ist es auch ganz ganz ganz wichtig (ja Wäber, würkli ganz wichtig), dass wir uns pünktlich treffen. Schaut das ihr um <b>16.15 Uhr</b> am Treffpunkt seit. Von da aus geht es dann gemeinsam weiter.
                 <br /><br />
-                Treffpunkt <b>16.15 Uhr</b> (spätestens) <a href="https://www.google.com/maps/@47.3784534,8.5406329,21z" target="_blank">Hier</a><br />
+                Treffpunkt <b>16.15 Uhr</b> (spätestens) <a href="https://goo.gl/maps/4faoN95txpuwp8ed8" target="_blank">Hier</a><br />
                 <i>Also im Untergeschoss, nöd uf de Strass, det womer üs sust ammel träffed, ihr wüssed scho wo. Nei nöd bim Fette Engel, unedra, gad näb de Rollträppe, die hend au immer ganz viel <i>Piöör</i> dete. Ja genau, dete.</i>
 
+                <br /><br /><br /><br />
+                <i>Wer sein Bier noch aufgespart hat - ab jetzt wäre kein schlechter Zeitpunkt, da es noch einen Moment dauert, bis wir dann am Ziel sind. Cheers</i>
                 </p>
             </div>
         </div>

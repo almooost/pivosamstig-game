@@ -6,11 +6,14 @@ const useForm = (callback) => {
     const [errors, setErrors] = useState([]);
     const [styleNext, setStyleNext] = useState({"display": "none"});
 
+    const solutions = ["pivosamstig22","papajoes","papajoe's","papajoe","olivertwist","oliver","twist", "paddyreillys","paddyreilly","paddys","paddy","paddyreilly's","pivo","playboy","playboys","craftbeer","winchester"];
+
     const validate = (event, name, value) => {
 
         switch(name){
             case 'solution':
-                if (value.toLowerCase().trim() !== 'papajoes'){
+                if (!solutions.includes(value.toLowerCase().trim())){
+                    //if (value.toLowerCase().trim() !== 'papajoes' && value.toLowerCase().trim() !== 'craftbeer'){
                     setErrors({
                         solution: 'Falsch'
                     })
